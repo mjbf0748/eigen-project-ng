@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class UploadService {
 
-  private SERVER_URL = 'http://198.211.96.22:5000/';
+  private SERVER_URL = 'http://198.211.96.22:5000';
   constructor(private httpClient: HttpClient) {  }
 
   upload(file: FileList): Observable<HttpEvent<any>> {
