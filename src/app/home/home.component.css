@@ -1,0 +1,16 @@
+.container {
+  margin: 4% 10%;
+}
+
+.submitBtn {
+  float: right;
+  margin: 0 10%;
+}
+
+.sentence {
+  margin: 2% 0;
+}
+
+.words {
+  margin: 5% 0;
+}
