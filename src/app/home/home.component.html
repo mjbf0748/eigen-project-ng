@@ -43,6 +43,8 @@
     </button>
   </div>
 
+  <div *ngIf="data.length > 0"><strong>Ordered from highest to lowest tf-idf score</strong></div>
+
   <div class="words" *ngFor="let item of data">
     <div>Word: <strong style = "text-transform:capitalize;">{{item.word}}</strong></div>
     <div>Docs: {{item.docs}}</div>

@@ -17,20 +17,12 @@ export class UploadService {
       formData.append(doc.name, doc, doc.name);
     }
 
-
-
-
-
     const req = new HttpRequest('POST', `${this.SERVER_URL}/api`, formData, {
       reportProgress: true,
       responseType: 'json'
     });
 
     return this.httpClient.request(req);
-  }
-
-  getFiles(): Observable<any> {
-    return this.httpClient.get(`${this.SERVER_URL}/files`);
   }
 
 }

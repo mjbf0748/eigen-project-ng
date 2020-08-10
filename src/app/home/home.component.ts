@@ -19,11 +19,9 @@ export class HomeComponent implements OnInit {
 
   constructor(private uploadService: UploadService) { }
 
-
   ngOnInit(): void {
     // this.fileInfos = this.uploadService.getFiles();
   }
-
 
   selectFiles(event): void {
     this.progressInfos = [];
@@ -32,9 +30,7 @@ export class HomeComponent implements OnInit {
 
   uploadFiles(): void {
     this.message = '';
-    // console.log(this.selectedFiles)
     this.upload(this.selectedFiles);
-
   }
 
   upload(file): void {
@@ -47,9 +43,6 @@ export class HomeComponent implements OnInit {
           this.data = event.body;
           console.log(this.data)
           let source = JSON.stringify(event.body);
-
-
-          // this.fileInfos = this.uploadService.getFiles();
         }
 
       },
